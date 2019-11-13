@@ -8,57 +8,64 @@ html {
 *, *::before, *::after {
   box-sizing: inherit;
 }
-
-.cards {
+body {
   margin: 0;
-  padding: 0;
+}
+
+header{
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+section {
   list-style-type: none;
   text-align: center;
+  flex-direction: row;
+  justify-content: center;
+  display: flex;
+  margin: 2em;
+  margin-top: 0;
 }
 
-.cards li {
-  display: inline-block;
-  background-color: #fff;
-  border: 3px solid #e2e2e2;
-  margin: 0 .5em 1em;
+div {
+  flex-direction: column;
+  display: flex;
+  margin: 0;
   padding: 1em;
-  border-radius: 10px;
   text-align: left;
+  width: 25%;
+  justify-content: space-between;
 }
 
-.cards img {
+img {
   display: block;
   width: 100px;
   margin: 0 auto 1.5rem;
 }
 
-.cards strong {
-  display: block;
-  margin-bottom: 1rem;
+h2 {
+  margin: 0;
   font-size: 1.125rem;
 }
 
-.cards dl {
-  margin-bottom: 1rem;
-}
-
-.cards dt {
-  display: inline-block;
-  width: 6em;
+h3 {
   font-style: italic;
+  margin: 0;
 }
 
-.cards dd {
+p {
   display: inline-block;
   margin: 0;
-  min-width: 9em;
+  flex-grow: 1;
+  margin-bottom: 1em;
 }
 
-.cards div {
+.btn-small div {
   text-align: center;
 }
 
-.cards a {
+.btn-small {
   display: inline-block;
   background-color: #333;
   padding: .5em .75em;
@@ -67,7 +74,26 @@ html {
   text-decoration: none;
 }
 
-.cards a:hover {
+.btn-small:hover {
   background-color: #333;
   color: #fff;
+}
+
+.page-one {
+  background-color: #e2e2e2;
+  border-right: 2px solid #333;
+}
+
+.page-two {
+  background-color: #ccc;
+  border-right: 2px solid #333;
+}
+
+.page-three {
+  background-color: #aaa;
+  border-right: 2px solid #333;
+}
+
+.page-four {
+  background-color: #999;
 }
