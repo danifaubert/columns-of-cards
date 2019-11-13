@@ -8,11 +8,12 @@ html {
 *, *::before, *::after {
   box-sizing: inherit;
 }
+
 body {
   margin: 0;
 }
 
-header{
+header {
   display: flex;
   justify-content: center;
   margin: 0;
@@ -40,6 +41,7 @@ div {
 
 img {
   display: block;
+  width: 100%;
   width: 100px;
   margin: 0 auto 1.5rem;
 }
@@ -66,15 +68,18 @@ p {
 }
 
 .btn-small {
-  display: inline-block;
-  background-color: #333;
-  padding: .5em .75em;
   border-radius: 4px;
   color: #f2f2f2;
   text-decoration: none;
 }
 
-.btn-small:hover {
+.btn {
+  display: inline-block;
+  background-color: #333;
+  padding: .5em .75em;
+}
+
+.btn:hover {
   background-color: #333;
   color: #fff;
 }
